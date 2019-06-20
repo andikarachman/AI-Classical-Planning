@@ -15,7 +15,7 @@ class ActionLayer(BaseActionLayer):
         --------
         layers.ActionNode
         """
-        # TODO: implement this function
+    
         actionA_eff = actionA.effects
         actionB_eff = actionB.effects
         for effA in actionA_eff:
@@ -31,7 +31,7 @@ class ActionLayer(BaseActionLayer):
         --------
         layers.ActionNode
         """
-        # TODO: implement this function
+    
         actionA_eff = actionA.effects
         actionB_eff = actionB.effects
         actionA_precond = actionA.preconditions
@@ -52,7 +52,7 @@ class ActionLayer(BaseActionLayer):
         layers.ActionNode
         layers.BaseLayer.parent_layer
         """
-        # TODO: implement this function
+        
         actionA_precond = actionA.preconditions
         actionB_precond = actionB.preconditions
         for precondA in actionA_precond:
@@ -144,7 +144,7 @@ class PlanningGraph:
         --------
         Russell-Norvig 10.3.1 (3rd Edition)
         """
-        # TODO: implement this function
+        
         goal = self.goal
         level_sum = 0
         for x in goal:
@@ -184,7 +184,7 @@ class PlanningGraph:
         -----
         WARNING: you should expect long runtimes using this heuristic with A*
         """
-        # TODO: implement maxlevel heuristic
+        
         goal = self.goal
         level_sum = []
         for x in goal:
@@ -218,7 +218,7 @@ class PlanningGraph:
         -----
         WARNING: you should expect long runtimes using this heuristic on complex problems
         """
-        # TODO: implement setlevel heuristic
+        
         goal = list(self.goal)
         set_level = []
         iteration = 1
